@@ -10,3 +10,5 @@ deny[msg] {
   contains(cert, "BEGIN CERTIFICATE")
   msg := sprintf("You are exposing the Certificates in  AS3 %v", [cert])
 }
+cert := r.change.after.Sample_cert_02.A1.webcert1.certificate
+msg := sprintf("You are exposing the Certificates in  AS3 %v", [cert])
