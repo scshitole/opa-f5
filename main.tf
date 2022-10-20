@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "f5networks-bd"
+
+    workspaces {
+      name = "as3-space"
+    }
+  }
   required_providers {
     bigip = {
       source  = "F5Networks/bigip"
