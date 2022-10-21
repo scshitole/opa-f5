@@ -3,7 +3,7 @@ terraform {
     organization = "f5networks-bd"
 
     workspaces {
-      name = "as3-space"
+      name = "scsopa"
     }
   }
   required_providers {
